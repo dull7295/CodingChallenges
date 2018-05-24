@@ -23,6 +23,13 @@ public class Anagram {
     public static void main(String[] args) {
         while(true) {
 
+            int max = Integer.MAX_VALUE;
+            int y = max+100;
+
+            System.out.println(" the value of max is " + max);
+            System.out.println(" the value of may is " + y);
+
+            System.out.println(" the value of min is " + Integer.MIN_VALUE);
 
             System.out.println("Enter strings to check if they are anagrams");
 

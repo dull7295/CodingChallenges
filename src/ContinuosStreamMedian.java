@@ -13,7 +13,7 @@ public class ContinuosStreamMedian {
     public float findMedian(int newNumber) {
        float currentMedian=0;
        if(currentSize % 2 == 0){
-           /*That means Max Heap is N and Min Heap is N */
+           /*That means Max heap.Heap is N and Min heap.Heap is N */
            maxHeap.add(newNumber);
            this.currentSize++;
            if(currentSize > 1) {
@@ -24,7 +24,7 @@ public class ContinuosStreamMedian {
                }
            }
        } else {
-           /*That means Max Heap is N+1 and Min Heap is N */
+           /*That means Max heap.Heap is N+1 and Min heap.Heap is N */
            maxHeap.add(newNumber);
            this.currentSize++;
            if(maxHeap.peek() != null) {
@@ -41,8 +41,8 @@ public class ContinuosStreamMedian {
                min = (int)minHeap.peek();
            }
 
-        System.out.println("max Heap " +maxHeap);
-        System.out.println("min Heap " +minHeap);
+        System.out.println("max heap.Heap " +maxHeap);
+        System.out.println("min heap.Heap " +minHeap);
         if(currentSize%2==0){
             currentMedian = (min+max)/2;
         } else {
